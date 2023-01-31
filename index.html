@@ -5,14 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/estilos.css" />
+    <link rel="stylesheet" href="./css/carrusel.css">
     <title>IMMANIS</title>
   </head>
   <body>
     <header>
       <!-- ENCABEZADO -->
-      <a href="./index.html" alt="Inicio"
-        ><img src="./recursos/logo.png" alt="Logo Principal" class="logo"
-      /></a>
+      <div class="contain-logo-redes">
+        <a href="./index.html" alt="Inicio"
+          ><img src="./recursos/logo.png" alt="Logo Principal" class="logo"
+        /></a>
+        <!--LOGOS REDES SOCIALES -->
+        <div class="redes">
+          <a href="https://www.facebook.com/Immanisdeathmetal/" target="_blank"
+            ><img src="./recursos/facebook.svg" alt="Logo Facebok"
+          /></a>
+          <a
+            href="https://www.youtube.com/@immanisdeathmetal9297/"
+            target="_blank"
+            ><img src="./recursos/youtube.svg" alt="Logo youtube"
+          /></a>
+          <a
+            href="https://www.instagram.com/immanis_death_metal/"
+            target="_blank"
+            ><img src="./recursos/instagram.svg" alt="Logo instagram"
+          /></a>
+          <a
+            href="https://open.spotify.com/artist/1Q7pbrpJ0icF2pfK95wbqh?si=hxLtCo7ESNip4RO9l2y8eQ"
+            target="_blank"
+            ><img src="./recursos/spotify.svg" alt="Logo Spotify"
+          /></a>
+        </div>
+      </div>
       <!-- MENU DE NAVEGACION -->
       <nav>
         <ul>
@@ -26,31 +50,48 @@
     </header>
     <!-- CONTENIDO PRINCIPAL -->
     <main class="main">
-      <h1>Lorem ipsum dolor sit.</h1>
+      <!-- CARRUSEL -->
+      <div class="slide">
+        <div class="slide-inner">
+            <input class="slide-open" type="radio" id="slide-1" 
+                  name="slide" aria-hidden="true" hidden="" checked="checked">
+            <div class="slide-item">
+                <img src="./recursos/header.jpg">
+            </div>
+            <input class="slide-open" type="radio" id="slide-2" 
+                  name="slide" aria-hidden="true" hidden="">
+            <div class="slide-item">
+                <img src="./recursos/C1.jpg">
+            </div>
+            <input class="slide-open" type="radio" id="slide-3" 
+                  name="slide" aria-hidden="true" hidden="">
+            <div class="slide-item">
+                <img src="./recursos/c2.jpg">
+            </div>
+            <label for="slide-3" class="slide-control prev control-1">‹</label>
+            <label for="slide-2" class="slide-control next control-1">›</label>
+            <label for="slide-1" class="slide-control prev control-2">‹</label>
+            <label for="slide-3" class="slide-control next control-2">›</label>
+            <label for="slide-2" class="slide-control prev control-3">‹</label>
+            <label for="slide-1" class="slide-control next control-3">›</label>
+            <ol class="slide-indicador">
+                <li>
+                    <label for="slide-1" class="slide-circulo">•</label>
+                </li>
+                <li>
+                    <label for="slide-2" class="slide-circulo">•</label>
+                </li>
+                <li>
+                    <label for="slide-3" class="slide-circulo">•</label>
+                </li>
+            </ol>
+        </div>
+    </div>
     </main>
     <!-- PIE DE PAGINA -->
     <footer>
       <img src="./recursos/dosranas-removebg-preview.png" class="footer-logo" />
       <p>© 2023 Todos lo derechos reservados.</p>
-      <!--LOGOS REDES SOCIALES -->
-      <div class="redes">
-        <a href="https://www.facebook.com/Immanisdeathmetal/" target="_blank"
-          ><img src="./recursos/facebook.svg" alt="Logo Facebok"
-        /></a>
-        <a
-          href="https://www.youtube.com/@immanisdeathmetal9297/"
-          target="_blank"
-          ><img src="./recursos/youtube.svg" alt="Logo youtube"
-        /></a>
-        <a href="https://www.instagram.com/immanis_death_metal/" target="_blank"
-          ><img src="./recursos/instagram.svg" alt="Logo instagram"
-        /></a>
-        <a
-          href="https://open.spotify.com/artist/1Q7pbrpJ0icF2pfK95wbqh?si=hxLtCo7ESNip4RO9l2y8eQ"
-          target="_blank"
-          ><img src="./recursos/spotify.svg" alt="Logo Spotify"
-        /></a>
-      </div>
     </footer>
   </body>
 </html>
