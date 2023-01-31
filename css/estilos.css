@@ -1,56 +1,64 @@
+/* RESET */
 *{
     padding: 0;
     margin: 0;
+    font-family: sans-serif;
 }
-
+/* CSS DEL HEADER */
 header{
+    display: flex;
+    flex-direction: column;
     background-color: black;
-    text-align: center;
+    height: 20vh;
+    align-items: center;
+    justify-content: center;
 }
 .logo{
-    height: 130px;
-    width: 220px;
-}
-.redes{
-    display: flex;
-    justify-content: center;
-    margin: 10px;
-}
-.redes img{
-    padding-right: 30px;
-} 
-nav{
-
+    height: 75x;
+    width: 120px;
 }
 nav ul{
     display: flex;
     list-style: none;
-    background-color: black;
+    width: 100vw;
+    /* border: 1px solid red; */
+    justify-content: center;
 }
 nav ul li{
-    justify-content: space-between;
-    width: 100%;
-    text-align: center;
-    border: 2px solid rgb(139, 139, 0) ;
+    display: flex;
+    /* border: 1px solid white;     */
+    margin: auto;
 }
 nav ul li a{
     text-decoration: none;
-    color: rgb(139, 139, 0);
-    font-size: 1.2rem;
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
 }
 
+/* CSS DEL MAIN */
 main{
-    background-image: url(/recursos/fondo4.jpg);
-    height: 100%;
-    width: 100%;
+    background-image: url('../recursos/header.jpg');
+    height: 60vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
-
+/* CSS DEL FOOTER */
 footer{
+    text-align: center;   
     background-color: grey;
-    text-align: center;    
+    height: 100%;
 }
 
 .footer-logo{
     height: 100px;
     width: 100px;
 }
+.redes{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.redes img{
+    padding-right: 15px;
+} 
