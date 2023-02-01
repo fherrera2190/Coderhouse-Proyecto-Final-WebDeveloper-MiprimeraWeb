@@ -4,75 +4,76 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <link rel="stylesheet" href="../css/estilos.css" />
     <title>IMMANIS</title>
   </head>
-    <!-- HEADER -->
+  <body>
+    <!-- ENCABEZADO -->
     <header>
-      <a href="../index.html" alt="Inicio"
-        ><img src="../recursos/logo.png" alt="Logo Principal" class="logo"
-      /></a>
-      <!-- MENU DE NAVEGACION -->
-      <nav>
-        <ul>
-          <li><a href="../secciones/biografia.html">BIOGRAFIA</a></li>
-          <li><a href="../secciones/eventos.html">EVENTOS</a></li>
-          <li><a href="../secciones/videos.html">VIDEOS</a></li>
-          <li><a href="../secciones/tienda.html">TIENDA</a></li>
-          <li><a href="../secciones/contacto.html">CONTACTO</a></li>
-        </ul>
-      </nav>
+      <div class="header-container">
+        <!-- LOGO PRINCIPAL Y REDES -->
+        <div class="contain-logo-redes">
+          <a href="../index.html" alt="Inicio"
+            ><img src="../recursos/logo.png" alt="Logo Principal" class="logo"
+          /></a>
+          <!--LOGOS REDES SOCIALES -->
+          <div class="redes">
+            <a
+              href="https://www.facebook.com/Immanisdeathmetal/"
+              target="_blank"
+              ><img src="../recursos/facebook.svg" alt="Logo Facebok"
+            /></a>
+            <a
+              href="https://www.youtube.com/@immanisdeathmetal9297/"
+              target="_blank"
+              ><img src="../recursos/youtube.svg" alt="Logo youtube"
+            /></a>
+            <a
+              href="https://www.instagram.com/immanis_death_metal/"
+              target="_blank"
+              ><img src="../recursos/instagram.svg" alt="Logo instagram"
+            /></a>
+            <a
+              href="https://open.spotify.com/artist/1Q7pbrpJ0icF2pfK95wbqh?si=hxLtCo7ESNip4RO9l2y8eQ"
+              target="_blank"
+              ><img src="../recursos/spotify.svg" alt="Logo Spotify"
+            /></a>
+          </div>
+        </div>
+        <!-- MENU DE NAVEGACION -->
+
+        <nav class="wow animate__animated animate__headShake">
+          <ul>
+            <li><a href="../index.html">INICIO</a></li>
+            <li><a href="../secciones/biografia.html">BIOGRAFIA</a></li>
+            <li><a href="../secciones/eventos.html">EVENTOS</a></li>
+            <li><a href="../secciones/videos.html">VIDEOS</a></li>
+            <li><a href="../secciones/tienda.html">TIENDA</a></li>
+            <li><a href="../secciones/contacto.html">CONTACTO</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <!-- CONTENIDO PRINCIPAL -->
-    <main class="main">
-      <article class="banner-hero">
-        <h1>Lorem ipsum dolor sit.</h1>
-      </article>
-      <article class="article2-class">
-        <h2>Titulo</h2>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi
-          odit ad placeat aspernatur impedit debitis explicabo adipisci
-          provident? Repellat, beatae. Facere atque, perspiciatis dolorum
-          dignissimos mollitia ducimus officia possimus nihil aspernatur dicta
-          vero, quia dolorem amet rem qui. Quod possimus nobis quidem velit cum
-          nemo aliquam autem, enim, placeat necessitatibus saepe vel amet totam
-          iste accusantium soluta? Molestiae corrupti aspernatur quas soluta
-          sint delectus fuga placeat et non illo praesentium, ipsa sit a
-          deleniti aliquam rem debitis in similique error exercitationem maxime.
-          Quae placeat sit nisi optio doloribus amet fugiat maiores fugit maxime
-          explicabo odio reiciendis, ipsum dicta nobis nostrum praesentium earum
-          cum, odit iusto inventore similique quia eveniet delectus. Ex beatae
-          minus voluptates. Quod non minus blanditiis tempora expedita.
-        </p>
-      </article>
-    </main>
+    <main class="main"></main>
     <!-- PIE DE PAGINA -->
     <footer>
-      <img
-        src="../recursos/dosranas-removebg-preview.png"
-        class="footer-logo"
-      />
-      <p>© 2023 Todos lo derechos reservados.</p>
-      <!--LOGOS REDES SOCIALES -->
-      <div class="redes">
-        <a href="https://www.facebook.com/Immanisdeathmetal/" target="_blank"
-          ><img src="../recursos/facebook.svg" alt="Logo Facebok"
-        /></a>
-        <a
-          href="https://www.youtube.com/@immanisdeathmetal9297/"
-          target="_blank"
-          ><img src="../recursos/youtube.svg" alt="Logo youtube"
-        /></a>
-        <a href="https://www.instagram.com/immanis_death_metal/" target="_blank"
-          ><img src="../recursos/instagram.svg" alt="Logo instagram"
-        /></a>
-        <a
-          href="https://open.spotify.com/artist/1Q7pbrpJ0icF2pfK95wbqh?si=hxLtCo7ESNip4RO9l2y8eQ"
-          target="_blank"
-          ><img src="../recursos/spotify.svg" alt="Logo Spotify"
-        /></a>
+      <div class="footer-dimension">
+        <img
+          src="../recursos/dosranas-removebg-preview.png"
+          class="footer-logo"
+        />
+        <p>© 2023 Todos lo derechos reservados.</p>
       </div>
     </footer>
+    <!-- WOW SCRIPT -->
+    <script>
+      new WOW().init();
+    </script>
+    <script src="../js/wow.js"></script>
   </body>
 </html>
