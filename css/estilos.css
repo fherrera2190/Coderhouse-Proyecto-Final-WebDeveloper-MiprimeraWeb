@@ -6,15 +6,13 @@
   font-family: sans-serif;
   box-sizing: border-box;
 }
-header {
-  height: 27vh;
+body {
+  background-color: black;
 }
 /* CSS DEL HEADER */
-.header-container {
+header {
   display: flex;
   flex-direction: column;
-  background-color: black;
-  height: 100%;
 }
 .contain-logo-redes {
   display: flex;
@@ -33,22 +31,23 @@ nav {
 nav ul {
   display: flex;
   list-style: none;
-  width: 100%;
-  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
 }
 nav ul li {
-  margin: auto;
+  padding: 0px 5px;
+  text-align: center;
+  width: 100%;
 }
 nav ul li a {
   text-decoration: none;
   color: rgb(255, 255, 255);
-  font-size: 0.75rem;
+  font-size: 0.65rem;
 }
 
-nav ul li:hover{
+nav ul li:hover {
   background-color: crimson;
 }
-
 .redes {
   display: flex;
   justify-content: center;
@@ -62,61 +61,48 @@ nav ul li:hover{
 
 /* CSS DEL MAIN */
 main {
-  height: 70vh;
-  width: 100vw;
-  background-color: black;
+  text-align: center;
 }
-.main-container {
-  height: 100%;
-  width: 100%;
+main h1 {
+  color: rgb(131, 131, 4);
+}
+main img {
+  width: 75%;
+  height: 75%;
 }
 .parrafo-1 {
   margin: 0.25rem;
   color: white;
-  text-align: center;
   font-size: 0.8rem;
 }
-
-.apareciendo{
+/* Animacion de del parrafo del main */
+.apareciendo {
   animation-name: apareciendo;
-  animation-duration: 5s;
+  animation-duration: 4s;
   animation-iteration-count: 1;
 }
-@keyframes apareciendo{
-  0%{
-      color:rgba(255, 255, 255, 0);
-
+@keyframes apareciendo {
+  0% {
+    color: rgba(255, 255, 255, 0);
   }
-  20%{
-      color: rgba(255, 255, 255, 0.134);
-
+  20% {
+    color: rgba(255, 255, 255, 0.134);
   }
-  40%{
-      color:rgba(255, 255, 255, 0.4)
-
+  40% {
+    color: rgba(255, 255, 255, 0.4);
   }
-  60%{
-      color:rgba(255, 255, 255, 0.616)
+  60% {
+    color: rgba(255, 255, 255, 0.616);
   }
-  80%{
-      color:rgba(255, 255, 255, 0.818)
+  80% {
+    color: rgba(255, 255, 255, 0.818);
   }
-  100%{
-      color: white;
+  100% {
+    color: white;
   }
-}
-
-.main img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  object-position: center;
 }
 /* CSS DEL FOOTER */
 footer {
-  height: 25vh;
-}
-.footer-dimension {
   height: 100%;
   width: 100%;
   text-align: center;
@@ -128,99 +114,121 @@ footer {
     rgba(0, 0, 0, 1) 100%
   );
 }
+
 footer p {
   color: white;
   text-shadow: 1px 3px black;
   padding-bottom: 10px;
 }
 .footer-logo {
-  height: 100px;
-  width: 100px;
+  height: 90px;
+  width: 90px;
 }
 
 /* MAIN VIDEO */
-.main-video {
-  height: 100%;
-  width: 100%;
-  background-color: black;
+main {
   color: white;
   text-align: center;
 }
 .grid-padre {
   display: flex;
   flex-direction: column;
-}
-.container-video div iframe {
-  width: 90vw;
-  height: 30vh;
+  text-align: center;
+  width: 100vw;
 }
 
-/* TABLET  768*892 */
+/* CSS BIOGRAFIA */
+.grid-padre-bio {
+  display: flex;
+  flex-direction: column;
+}
+
+/* TABLET  MAYOR 768*/
 @media (min-width: 768px) {
-  /* HEADER */
-  header {
-    height: 15vh;
+  .redes img {
+    width: 48px;
+    height: 48px;
   }
-  .header-container {
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 5px;
-    justify-content: center;
-  }
-  nav {
-    margin-top: 0px;
-    border: 1px solid crimson;
-  }
-
-  .main-container {
-    height: 100%;
-    width: 100%;
-  }
-
   nav ul li a {
     font-size: 1rem;
-    margin: 10px;
   }
-  /* MAIN */
 
   .parrafo-1 {
-    margin: 0.75rem;
-  }
-  .parrafo-1 h3 {
-    margin: 5px;
+    font-size: 1.2rem;
+    margin: 1rem;
   }
 
-  /* CSS FOOTER */
-  footer {
-    height: 15vh;
+  /* CSS VIDEO */
+  .grid-padre {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+      "video1 video2"
+      "video3 video4";
+    align-items: center;
   }
-  /* MAIN VIDEO */
+
+  main div div iframe {
+    height: 300px;
+    width: 350px;
+  }
+  .video1 {
+    grid-area: video1;
+    border: 1px solid gray;
+  }
+
+  .video2 {
+    grid-area: video2;
+    border: 1px solid gray;
+  }
+
+  .video3 {
+    grid-area: video3;
+    border: 1px solid gray;
+  }
+
+  .video4 {
+    grid-area: video4;
+    border: 1px solid gray;
+  }
 }
 
-/* DESKTOP */
-@media (min-width: 1024) {
-  /* CSS INDEX */
-  header {
-    height: 10vh;
+/* DESKTOP Mayor 1024 */
+@media (min-width: 1024px) {
+  main div div iframe {
+    height: 300px;
+    width: 350px;
   }
-  .main {
-    height: 80vh;
-    width: 100vw;
-    background-color: black;
+  /* CAMBIO DE FLEX GRID EN LA BIOGRAFIA */
+  .grid-padre-bio {
+    display: grid;
+    grid-auto-rows: 1fr;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 5px 5px;
+    grid-template-areas:
+      "foto1 foto1 biografia biografia"
+      "foto1 foto1 biografia biografia"
+      "integrante1 integrante2 integrante3 integrante4"
+      "integrante1 integrante2 integrante3 integrante4";
   }
-  .main-container {
-    height: 50%;
-    width: 90%;
+  .foto1 {
+    grid-area: foto1;
   }
-  footer {
-    text-align: center;
-    height: 10vh;
-    background: rgb(205, 205, 205);
-    background: radial-gradient(
-      circle,
-      rgba(205, 205, 205, 1) 0%,
-      rgba(0, 0, 0, 1) 100%,
-      rgba(0, 0, 0, 1) 100%
-    );
+  .biografia {
+    grid-area: biografia;
+  }
+  .integrante1 {
+    grid-area: integrante1;
+  }
+  .integrante2 {
+    grid-area: integrante2;
+  }
+  .integrante3 {
+    grid-area: integrante3;
+  }
+  .integrante4 {
+    grid-area: integrante4;
   }
 }
