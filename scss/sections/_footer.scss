@@ -1,0 +1,22 @@
+/* CSS DEL FOOTER */
+footer {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    background: rgb(205, 205, 205);
+    background: radial-gradient(
+      circle,
+      rgba(205, 205, 205, 1) 0%,
+      rgba(0, 0, 0, 1) 100%,
+      rgba(0, 0, 0, 1) 100%
+    );
+  }
+footer p {
+    color: white;
+    text-shadow: 1px 3px black;
+    padding-bottom: 10px;
+}
+.footer-logo {
+    height: 90px;
+    width: 90px;
+}

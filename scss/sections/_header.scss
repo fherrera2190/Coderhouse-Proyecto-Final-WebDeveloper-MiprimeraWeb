@@ -1,0 +1,50 @@
+/* CSS DEL HEADER */
+header {
+    display: flex;
+    flex-direction: column;
+  }
+  .contain-logo-redes {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .logo {
+    padding-top: 0.5rem;
+    height: 90px;
+    width: 120px;
+  }
+  nav {
+    margin-top: 10px;
+    border: 1px solid crimson;
+  }
+  nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+  }
+  nav ul li {
+    padding: 0px 5px;
+    text-align: center;
+    width: 100%;
+  }
+  nav ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 0.65rem;
+  }
+  
+  nav ul li:hover {
+    background-color: crimson;
+  }
+  .redes {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  .redes img {
+    padding-right: 10px;
+    width: 35px;
+    height: 35px;
+  }
+  
