@@ -1,73 +1,68 @@
 @charset "UTF-8";
+/* RESET */
+* {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+  color: white; }
+
 /* CSS DEL HEADER */
-header {
+.header {
   display: flex;
   flex-direction: column; }
-
-.contain-logo-redes {
-  display: flex;
-  width: 100%;
-  justify-content: space-between; }
-
-.logo {
-  padding-top: 0.5rem;
-  height: 90px;
-  width: 120px; }
-
-nav {
-  margin-top: 10px;
-  border: 1px solid crimson; }
-
-nav ul {
-  display: flex;
-  list-style: none;
-  justify-content: space-around;
-  align-items: center; }
-
-nav ul li {
-  padding: 0px 5px;
-  text-align: center;
-  width: 100%; }
-
-nav ul li a {
-  text-decoration: none;
-  color: white;
-  font-size: 0.65rem; }
-
-nav ul li:hover {
-  background-color: crimson; }
-
-.redes {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end; }
-
-.redes img {
-  padding-right: 10px;
-  width: 35px;
-  height: 35px; }
+  .header .contain-logo-redes {
+    display: flex;
+    width: 100%;
+    justify-content: space-between; }
+  .header .logo {
+    padding-top: 0.5rem;
+    height: 90px;
+    width: 120px; }
+  .header nav {
+    margin-top: 10px;
+    border: 1px solid crimson; }
+  .header nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center; }
+  .header nav ul li {
+    padding: 0px 5px;
+    text-align: center;
+    width: 100%; }
+  .header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 0.65rem; }
+  .header nav ul li:hover {
+    background-color: crimson; }
+  .header .redes {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end; }
+  .header .redes img {
+    padding-right: 10px;
+    width: 35px;
+    height: 35px; }
 
 /* CSS DEL MAIN */
-main {
-  text-align: center; }
-
-main h1 {
-  color: #838304; }
-
-main img {
-  width: 75%;
-  height: 75%; }
-
-.parrafo-1 {
-  margin: 0.25rem;
-  color: white;
-  font-size: 0.8rem; }
-
-/* Animacion de del parrafo del main */
-.apareciendo {
-  animation-name: apareciendo;
-  animation-duration: 4s;
-  animation-iteration-count: 1; }
+.main-index {
+  text-align: center;
+  /* Animacion de del parrafo del main */ }
+  .main-index h1 {
+    color: #838304; }
+  .main-index img {
+    width: 75%;
+    height: 75%; }
+  .main-index .parrafo-1 {
+    margin: 0.25rem;
+    color: white;
+    font-size: 0.8rem; }
+  .main-index .apareciendo {
+    animation-name: apareciendo;
+    animation-duration: 4s;
+    animation-iteration-count: 1; }
 
 @keyframes apareciendo {
   0% {
@@ -83,32 +78,26 @@ main img {
   100% {
     color: white; } }
 
+.main-eventos p {
+  background-color: white;
+  color: crimson; }
+
 /* CSS DEL FOOTER */
-footer {
+.footer {
   height: 100%;
   width: 100%;
   text-align: center;
   background: #cdcdcd;
   background: radial-gradient(circle, #cdcdcd 0%, black 100%, black 100%); }
-
-footer p {
-  color: white;
-  text-shadow: 1px 3px black;
-  padding-bottom: 10px; }
-
-.footer-logo {
-  height: 90px;
-  width: 90px; }
+  .footer p {
+    color: white;
+    text-shadow: 1px 3px black;
+    padding-bottom: 10px; }
+  .footer .footer-logo {
+    height: 90px;
+    width: 90px; }
 
 /* MOBILE FIRST Movil pequeño 360*640 */
-/* RESET */
-* {
-  padding: 0;
-  margin: 0;
-  font-family: sans-serif;
-  box-sizing: border-box;
-  color: white; }
-
 body {
   background-color: black; }
 
@@ -144,29 +133,3 @@ body {
   .video4 {
     grid-area: video4;
     border: 1px solid gray; } }
-
-/* DESKTOP Mayor 1024 */
-@media (min-width: 1024px) {
-  main div div iframe {
-    height: 300px;
-    width: 350px; }
-  /* CAMBIO DE FLEX GRID EN LA BIOGRAFIA */
-  .grid-padre-bio {
-    display: grid;
-    grid-auto-rows: 1fr;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    gap: 5px 5px;
-    grid-template-areas: "foto1 foto1 biografia biografia" "foto1 foto1 biografia biografia" "integrante1 integrante2 integrante3 integrante4" "integrante1 integrante2 integrante3 integrante4"; }
-  .foto1 {
-    grid-area: foto1; }
-  .biografia {
-    grid-area: biografia; }
-  .integrante1 {
-    grid-area: integrante1; }
-  .integrante2 {
-    grid-area: integrante2; }
-  .integrante3 {
-    grid-area: integrante3; }
-  .integrante4 {
-    grid-area: integrante4; } }

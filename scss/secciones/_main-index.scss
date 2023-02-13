@@ -1,42 +1,52 @@
 /* CSS DEL MAIN */
-main {
-    text-align: center;
-  }
-  main h1 {
+.main-index {
+  text-align: center;
+
+  h1 {
     color: rgb(131, 131, 4);
   }
-  main img {
+
+  img {
     width: 75%;
     height: 75%;
   }
+
   .parrafo-1 {
     margin: 0.25rem;
     color: white;
     font-size: 0.8rem;
   }
+
   /* Animacion de del parrafo del main */
   .apareciendo {
     animation-name: apareciendo;
     animation-duration: 4s;
     animation-iteration-count: 1;
   }
+
   @keyframes apareciendo {
     0% {
       color: rgba(255, 255, 255, 0);
     }
+
     20% {
       color: rgba(255, 255, 255, 0.134);
     }
+
     40% {
       color: rgba(255, 255, 255, 0.4);
     }
+
     60% {
       color: rgba(255, 255, 255, 0.616);
     }
+
     80% {
       color: rgba(255, 255, 255, 0.818);
     }
+
     100% {
       color: white;
     }
   }
+}

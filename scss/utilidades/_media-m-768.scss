@@ -1,0 +1,44 @@
+/* TABLET  MAYOR 768*/
+@media (min-width: 768px) {
+    .redes img {
+      width: 48px;
+      height: 48px;
+    }
+    nav ul li a {
+      font-size: 1rem;
+    }
+    .parrafo-1 {
+      font-size: 1.2rem;
+      margin: 1rem;
+    }
+    /* CSS VIDEO */
+    .grid-padre {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      grid-template-areas:
+        "video1 video2"
+        "video3 video4";
+      align-items: center;
+    }
+    main div div iframe {
+      height: 300px;
+      width: 350px;
+    }
+    .video1 {
+      grid-area: video1;
+      border: 1px solid gray;
+    }
+    .video2 {
+      grid-area: video2;
+      border: 1px solid gray;
+    }
+    .video3 {
+      grid-area: video3;
+      border: 1px solid gray;
+    }
+    .video4 {
+      grid-area: video4;
+      border: 1px solid gray;
+    }
+  }
