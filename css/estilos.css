@@ -104,6 +104,11 @@
     font-size: 1.5rem; } }
 
 @media (min-width: 1024px) {
+  .flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem; }
   .main-index .parrafo-1 {
     font-size: 2rem; } }
 

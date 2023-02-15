@@ -72,6 +72,13 @@
 }
 
 @include desktop {
+
+  .flex-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
   .main-index .parrafo-1 {
     font-size: 2rem;
   }
