@@ -1,7 +1,104 @@
+// CSS BIOGRAFIA
 
-/* CSS BIOGRAFIA */
-.grid-padre-bio {
+.main-biografia {
+  text-align: center;
+
+  .grid-padre-bio {
+    background-color: rgb(19, 16, 15);
+    padding: 3px;
+    width: 80%;
+    margin: auto;
     display: flex;
     flex-direction: column;
   }
-  
+
+  .img-bio {
+    width: 100%;
+  }
+}
+
+// QUERY BIOGRAFIA
+
+@include desktop {
+  .grid-padre-bio {
+    display: grid !important;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 0.5fr);
+    gap: 20px;
+    grid-template-areas:
+      "foto1 foto1 biografia biografia"
+      "integrante1 integrante2 integrante3 integrante4";
+    border-radius: 25px;
+  }
+
+  .foto1 {
+    grid-area: foto1;
+    border-radius: 25px;
+    background-color: rgb(100, 13, 31);
+  }
+
+  .biografia {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    grid-area: biografia;
+    border-radius: 25px;
+    background-color: rgb(100, 13, 31);
+  }
+
+  .integrante1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    grid-area: integrante1;
+    border-radius: 25px;
+    background-color: rgb(100, 13, 31);
+
+    div {
+      margin: auto;
+      width: 80%;
+    }
+  }
+}
+
+.integrante2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  grid-area: integrante2;
+  border-radius: 25px;
+  background-color: rgb(100, 13, 31);
+
+  div {
+    margin: auto;
+    width: 80%;
+  }
+}
+
+.integrante3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  grid-area: integrante3;
+  border-radius: 25px;
+  background-color: rgb(100, 13, 31);
+
+  div {
+    margin: auto;
+    width: 80%;
+  }
+}
+
+.integrante4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  grid-area: integrante4;
+  border-radius: 25px;
+  background-color: rgb(100, 13, 31);
+
+  div {
+    margin: auto;
+    width: 80%;
+  }
+}

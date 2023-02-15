@@ -1,18 +1,24 @@
 /* CSS DEL MAIN */
 .main-index {
   text-align: center;
+  margin-top: 2rem;
+  .container {
+    width: 90%;
+  }
 
   h1 {
     color: rgb(131, 131, 4);
+    font-size: 2rem;
+    font-family: $immanis;
   }
 
-  img {
-    width: 75%;
-    height: 75%;
+  .img-carousel {
+    width: 300px;
+    height: 225px;
   }
 
   .parrafo-1 {
-    margin: 0.25rem;
+    // margin: 0.25rem;
     color: white;
     font-size: 0.8rem;
   }
@@ -50,3 +56,24 @@
     }
   }
 }
+
+// QUERY INDEX
+@include tablet {
+  .main-index h1 {
+    font-size: 4rem;
+  }
+  .main-index .img-carousel {
+    width: 768px;
+    height: 650px;
+  }
+  .main-index .parrafo-1 {
+    font-size: 1.5rem;
+  }
+}
+
+@include desktop {
+  .main-index .parrafo-1 {
+    font-size: 2rem;
+  }
+}
+
