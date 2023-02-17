@@ -31,12 +31,15 @@
   }
 
   .foto1 {
+    margin: 1rem 0px;
     grid-area: foto1;
     border-radius: 25px;
     background-color: rgb(100, 13, 31);
   }
 
   .biografia {
+    padding: 1.5rem;
+    margin: 1rem 0px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -46,6 +49,7 @@
   }
 
   .integrante1 {
+    margin: 1rem 0px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -61,6 +65,7 @@
 }
 
 .integrante2 {
+  margin: 1rem 0px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -75,6 +80,7 @@
 }
 
 .integrante3 {
+  margin: 1rem 0px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -89,6 +95,7 @@
 }
 
 .integrante4 {
+  margin: 1rem 0px;
   display: flex;
   flex-direction: column;
   justify-content: center;

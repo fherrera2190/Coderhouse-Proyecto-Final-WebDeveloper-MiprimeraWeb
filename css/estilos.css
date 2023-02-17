@@ -135,10 +135,13 @@
     grid-template-areas: "foto1 foto1 biografia biografia" "integrante1 integrante2 integrante3 integrante4";
     border-radius: 25px; }
   .foto1 {
+    margin: 1rem 0px;
     grid-area: foto1;
     border-radius: 25px;
     background-color: #640d1f; }
   .biografia {
+    padding: 1.5rem;
+    margin: 1rem 0px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -146,6 +149,7 @@
     border-radius: 25px;
     background-color: #640d1f; }
   .integrante1 {
+    margin: 1rem 0px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -157,6 +161,7 @@
       width: 80%; } }
 
 .integrante2 {
+  margin: 1rem 0px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -168,6 +173,7 @@
     width: 80%; }
 
 .integrante3 {
+  margin: 1rem 0px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -179,6 +185,7 @@
     width: 80%; }
 
 .integrante4 {
+  margin: 1rem 0px;
   display: flex;
   flex-direction: column;
   justify-content: center;
