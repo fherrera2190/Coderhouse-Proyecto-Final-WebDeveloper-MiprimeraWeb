@@ -1,7 +1,5 @@
 // CSS EVENTOS
 .main-eventos {
-    width: 100%;
-
     h1 {
         color: rgb(131, 131, 4);
         font-size: 2rem;
@@ -19,12 +17,13 @@
 
         .table {
             text-align: center;
-            width: 100%;
+            width: 80%;
+            margin:auto;
             height: 100%;
             border: 1px solid grey;
 
             th {
-                opacity: 75%;
+                opacity: 65%;
                 background-color: rgb(14, 12, 121);
             }
 
@@ -34,7 +33,7 @@
         }
 
         .img-event {
-            opacity: 75%;
+            opacity: 85%;
             width: 300px;
             height: 225px;
         }
@@ -58,7 +57,7 @@
 @include desktop {
     .main-eventos {
         h1 {
-            font-size: 5rem;
+            font-size: 3rem;
         }
 
         margin-bottom: 20px;

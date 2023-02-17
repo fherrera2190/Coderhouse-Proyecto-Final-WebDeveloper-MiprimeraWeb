@@ -1,9 +1,9 @@
 /* CSS DEL MAIN */
 .main-index {
   text-align: center;
-  margin-top: 2rem;
+  min-height: 60vh;
   .container {
-    width: 90%;
+    width: 100%;
   }
 
   h1 {
@@ -18,7 +18,7 @@
   }
 
   .parrafo-1 {
-    // margin: 0.25rem;
+    margin-top: 0.5rem;
     color: white;
     font-size: 0.8rem;
   }
@@ -60,7 +60,7 @@
 // QUERY INDEX
 @include tablet {
   .main-index h1 {
-    font-size: 4rem;
+    font-size: 3rem;
   }
   .main-index .img-carousel {
     width: 768px;
@@ -68,6 +68,7 @@
   }
   .main-index .parrafo-1 {
     font-size: 1.5rem;
+    margin-top: 0;
   }
 }
 

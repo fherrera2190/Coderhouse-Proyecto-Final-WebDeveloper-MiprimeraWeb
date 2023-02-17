@@ -10,7 +10,8 @@
 /* CSS DEL HEADER */
 .header {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  min-height: 15vh; }
   .header .contain-logo-redes {
     display: flex;
     width: 100%;
@@ -61,10 +62,10 @@
 /* CSS DEL MAIN */
 .main-index {
   text-align: center;
-  margin-top: 2rem;
+  min-height: 60vh;
   /* Animacion de del parrafo del main */ }
   .main-index .container {
-    width: 90%; }
+    width: 100%; }
   .main-index h1 {
     color: #838304;
     font-size: 2rem;
@@ -73,6 +74,7 @@
     width: 300px;
     height: 225px; }
   .main-index .parrafo-1 {
+    margin-top: 0.5rem;
     color: white;
     font-size: 0.8rem; }
   .main-index .apareciendo {
@@ -96,12 +98,13 @@
 
 @media (min-width: 768px) {
   .main-index h1 {
-    font-size: 4rem; }
+    font-size: 3rem; }
   .main-index .img-carousel {
     width: 768px;
     height: 650px; }
   .main-index .parrafo-1 {
-    font-size: 1.5rem; } }
+    font-size: 1.5rem;
+    margin-top: 0; } }
 
 @media (min-width: 1024px) {
   .flex-container {
@@ -115,7 +118,6 @@
 .main-biografia {
   text-align: center; }
   .main-biografia .grid-padre-bio {
-    background-color: #13100f;
     padding: 3px;
     width: 80%;
     margin: auto;
@@ -187,32 +189,32 @@
     margin: auto;
     width: 80%; }
 
-.main-eventos {
-  width: 100%; }
-  .main-eventos h1 {
-    color: #838304;
-    font-size: 2rem;
-    font-family: "Roboto Slab", serif;
+.main-eventos h1 {
+  color: #838304;
+  font-size: 2rem;
+  font-family: "Roboto Slab", serif;
+  text-align: center; }
+
+.main-eventos .container {
+  display: flex;
+  flex-direction: column; }
+  .main-eventos .container .img-center {
     text-align: center; }
-  .main-eventos .container {
-    display: flex;
-    flex-direction: column; }
-    .main-eventos .container .img-center {
-      text-align: center; }
-    .main-eventos .container .table {
-      text-align: center;
-      width: 100%;
-      height: 100%;
+  .main-eventos .container .table {
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    height: 100%;
+    border: 1px solid grey; }
+    .main-eventos .container .table th {
+      opacity: 65%;
+      background-color: #0e0c79; }
+    .main-eventos .container .table td {
       border: 1px solid grey; }
-      .main-eventos .container .table th {
-        opacity: 75%;
-        background-color: #0e0c79; }
-      .main-eventos .container .table td {
-        border: 1px solid grey; }
-    .main-eventos .container .img-event {
-      opacity: 75%;
-      width: 300px;
-      height: 225px; }
+  .main-eventos .container .img-event {
+    opacity: 85%;
+    width: 300px;
+    height: 225px; }
 
 @media (min-width: 768px) {
   .main-eventos .container .img-event {
@@ -224,7 +226,7 @@
   .main-eventos {
     margin-bottom: 20px; }
     .main-eventos h1 {
-      font-size: 5rem; }
+      font-size: 3rem; }
     .main-eventos .container {
       flex-direction: row;
       justify-content: space-around; }
@@ -238,7 +240,9 @@
 /* CSS MAIN VIDEO */
 .main-video {
   color: white;
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 1rem;
+  margin-bottom: 1rem; }
   .main-video h1 {
     color: #838304;
     font-size: 2rem;
@@ -247,9 +251,19 @@
   .main-video .grid-padre {
     display: flex;
     flex-direction: column;
-    text-align: center;
-    width: 100vw;
-    margin-bottom: 1rem; }
+    text-align: center; }
+    .main-video .grid-padre .video1 {
+      margin-top: 2rem;
+      margin-bottom: 2rem; }
+    .main-video .grid-padre .video2 {
+      margin-top: 2rem;
+      margin-bottom: 2rem; }
+    .main-video .grid-padre .video3 {
+      margin-top: 2rem;
+      margin-bottom: 2rem; }
+    .main-video .grid-padre .video4 {
+      margin-top: 2rem;
+      margin-bottom: 2rem; }
 
 @media (min-width: 768px) {
   .main-video .grid-padre iframe {
@@ -286,18 +300,20 @@
 
 /* CSS DEL FOOTER */
 .footer {
-  height: 100%;
-  width: 100%;
+  min-height: 15vh;
   text-align: center;
   background: #cdcdcd;
   background: radial-gradient(circle, #cdcdcd 0%, black 100%, black 100%); }
   .footer p {
     color: white;
     text-shadow: 1px 3px black;
-    padding-bottom: 10px; }
+    padding-bottom: 10px;
+    margin: 0px !important; }
   .footer .footer-logo {
     height: 90px;
     width: 90px; }
 
 body {
-  background-color: black; }
+  background-color: black;
+  background-image: url("../recursos/fondobody.jpg");
+  object-fit: cover; }

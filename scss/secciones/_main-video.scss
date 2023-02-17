@@ -2,20 +2,38 @@
 .main-video {
   color: white;
   text-align: center;
-
+  margin-bottom: 1rem;
+  margin-bottom: 1rem;
   h1 {
     color: rgb(131, 131, 4);
     font-size: 2rem;
     font-family: $immanis;
     text-align: center;
+
   }
 
   .grid-padre {
     display: flex;
     flex-direction: column;
     text-align: center;
-    width: 100vw;
-    margin-bottom: 1rem;
+
+    .video1{
+      margin-top:2rem;
+      margin-bottom:2rem;
+    }
+    .video2{
+      margin-top:2rem;
+      margin-bottom:2rem;
+    }
+    .video3{
+      margin-top:2rem;
+      margin-bottom:2rem;
+    }
+    .video4{
+      margin-top:2rem;
+      margin-bottom:2rem;
+    }
+
   }
 }
 
