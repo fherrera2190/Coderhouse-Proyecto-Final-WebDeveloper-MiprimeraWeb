@@ -4,6 +4,7 @@
   text-align: center;
   margin-bottom: 1rem;
   margin-bottom: 1rem;
+
   h1 {
     color: rgb(131, 131, 4);
     font-size: 2rem;
@@ -17,23 +18,25 @@
     flex-direction: column;
     text-align: center;
 
-    .video1{
-      margin-top:2rem;
-      margin-bottom:2rem;
-    }
-    .video2{
-      margin-top:2rem;
-      margin-bottom:2rem;
-    }
-    .video3{
-      margin-top:2rem;
-      margin-bottom:2rem;
-    }
-    .video4{
-      margin-top:2rem;
-      margin-bottom:2rem;
+    .video1 {
+      margin-top: 2rem;
+      margin-bottom: 2rem;
     }
 
+    .video2 {
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .video3 {
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .video4 {
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
   }
 }
 

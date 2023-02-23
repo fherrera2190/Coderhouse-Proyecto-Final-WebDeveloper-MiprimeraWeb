@@ -118,13 +118,27 @@
 .main-biografia {
   text-align: center; }
   .main-biografia .grid-padre-bio {
-    padding: 3px;
     width: 80%;
     margin: auto;
     display: flex;
     flex-direction: column; }
+  .main-biografia p {
+    border-radius: 25px;
+    background-color: #640d1f;
+    padding: 5%;
+    margin: 5% 0px; }
   .main-biografia .img-bio {
-    width: 100%; }
+    width: 100%;
+    height: 100%; }
+  .main-biografia .img-int {
+    margin: 5%;
+    width: 200px;
+    height: 300px; }
+
+@media (min-width: 768px) {
+  .card-container {
+    display: flex;
+    align-items: center; } }
 
 @media (min-width: 1024px) {
   .grid-padre-bio {
@@ -135,66 +149,20 @@
     grid-template-areas: "foto1 foto1 biografia biografia" "integrante1 integrante2 integrante3 integrante4";
     border-radius: 25px; }
   .foto1 {
-    margin: 1rem 0px;
-    grid-area: foto1;
-    border-radius: 25px;
-    background-color: #640d1f; }
+    grid-area: foto1; }
   .biografia {
     grid-area: biografia;
     padding: 1.5rem;
     margin: 1rem 0px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    border-radius: 25px;
-    background-color: #640d1f; }
-  .integrante1 {
-    margin: 1rem 0px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    grid-area: integrante1;
-    border-radius: 25px;
-    background-color: #640d1f; }
-    .integrante1 div {
-      margin: auto;
-      width: 80%; } }
-
-.integrante2 {
-  margin: 1rem 0px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  grid-area: integrante2;
-  border-radius: 25px;
-  background-color: #640d1f; }
-  .integrante2 div {
-    margin: auto;
-    width: 80%; }
-
-.integrante3 {
-  margin: 1rem 0px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  grid-area: integrante3;
-  border-radius: 25px;
-  background-color: #640d1f; }
-  .integrante3 div {
-    margin: auto;
-    width: 80%; }
-
-.integrante4 {
-  margin: 1rem 0px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  grid-area: integrante4;
-  border-radius: 25px;
-  background-color: #640d1f; }
-  .integrante4 div {
-    margin: auto;
-    width: 80%; }
+    justify-content: center; }
+  .img-int {
+    margin: 5%;
+    width: 300px !important;
+    height: 500px !important; }
+  .card-container {
+    display: block; } }
 
 .main-eventos h1 {
   color: #838304;
