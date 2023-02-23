@@ -38,12 +38,12 @@
   }
 
   .biografia {
+    grid-area: biografia;
     padding: 1.5rem;
     margin: 1rem 0px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    grid-area: biografia;
     border-radius: 25px;
     background-color: rgb(100, 13, 31);
   }
