@@ -20,6 +20,9 @@
     padding-top: 0.5rem;
     height: 90px;
     width: 120px; }
+  .header .logo:hover {
+    transition: width .5s;
+    width: 150px; }
   .header nav {
     border: 1px solid crimson;
     width: 100%; }
@@ -62,7 +65,7 @@
 /* CSS DEL MAIN */
 .main-index {
   text-align: center;
-  min-height: 60vh;
+  min-height: 70vh;
   /* Animacion de del parrafo del main */ }
   .main-index .container {
     width: 100%; }
@@ -171,6 +174,7 @@
   text-align: center; }
 
 .main-eventos .container {
+  min-height: 70vh;
   display: flex;
   flex-direction: column; }
   .main-eventos .container .img-center {
@@ -188,14 +192,14 @@
       border: 1px solid grey; }
   .main-eventos .container .img-event {
     opacity: 85%;
-    width: 300px;
-    height: 225px; }
+    width: 250px;
+    height: 360px; }
 
 @media (min-width: 768px) {
   .main-eventos .container .img-event {
-    opacity: 75%;
-    width: 560px;
-    height: 560px; } }
+    opacity: 85%;
+    width: 560px !important;
+    height: 700px !important; } }
 
 @media (min-width: 1024px) {
   .main-eventos {

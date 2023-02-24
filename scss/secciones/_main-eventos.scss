@@ -8,6 +8,7 @@
     }
 
     .container {
+        min-height: 70vh;
         display: flex;
         flex-direction: column;
 
@@ -34,8 +35,8 @@
 
         .img-event {
             opacity: 85%;
-            width: 300px;
-            height: 225px;
+            width: 250px;
+            height: 360px;
         }
     }
 }
@@ -46,9 +47,9 @@
     .main-eventos {
         .container {
             .img-event {
-                opacity: 75%;
-                width: 560px;
-                height: 560px;
+                opacity: 85%;
+                width: 560px !important;
+                height: 700px !important;
             }
         }
     }

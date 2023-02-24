@@ -16,6 +16,11 @@
     width: 120px;
   }
 
+  .logo:hover{
+    transition: width .5s;
+    width: 150px
+  }
+
   nav {
     border: 1px solid crimson;
     width: 100%;
